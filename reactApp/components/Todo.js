@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TodoList from "./TodoList";
 
 class Todo extends React.Component {
   render() {
     return(
       <div>
-        {dummyData.map((task) => {
+        {this.props.todos.map((task) => {
           return (
           task.completed
           ? <div>
